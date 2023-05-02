@@ -6,9 +6,9 @@ CREATE TABLE Coach(
 
  	CoachID 	number(2) not null,  
 
-  	FNameC	varchar2(15) not null, 
+  	FNameC		varchar2(15) not null, 
 
-  	LNameC	varchar(15) not null, 
+  	LNameC		varchar(15) not null, 
 
   	Experience	number(2) not null, 
 
@@ -26,7 +26,7 @@ CREATE TABLE Team (
 
  	TeamName	varchar(50) not null, 
 
-  	CoachID	number(2),  
+  	CoachID		number(2),  
 
   	primary key (TeamID), 
 
@@ -68,17 +68,17 @@ DROP TABLE Game CASCADE CONSTRAINTS;
 
 CREATE TABLE Game( 
 
-  	GameID 	number(2) not null, 
+  	GameID 			number(2) not null, 
 
-  	HomeTeamID	number(2) not null, 
+  	HomeTeamID		number(2) not null, 
 
-  	AwayTeamID	number(2) not null, 
+  	AwayTeamID		number(2) not null, 
 
 	HomeTeamScore	number(3) not null, 
 
 	AwayTeamScore	number(3) not null, 
 
-  	GameDate	DATE not null, 
+  	GameDate		DATE not null, 
 
   	primary key (GameID), 
 
@@ -94,7 +94,7 @@ DROP TABLE Participates CASCADE CONSTRAINTS;
 
 CREATE TABLE Participates( 
 
-  	GameID 	number(2) not null, 
+  	GameID 		number(2) not null, 
 
   	PlayerID	number(2) not null, 
 
